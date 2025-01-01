@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="HomePagestyle.css" />
+    <title>SUTCLUBS</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">SUTCLUBS</div>
+      <nav class="nav-center">
+        <a href="homepage.html" class="nav-item">Home</a>
+      </nav>
+      <div class="nav-right">
+        <a href="LogInPage.html" class="nav-item">Log in</a>
+        <a href="SignUp.html" class="signup-button">Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          class="hero-image"
+          src="uploads\webProject1 - Copy.webp"
+          alt="Hero Image"
+        />
+        <div class="hero-text">Welcome to the SutClub Management System</div>
+      </section>
+
+      <section class="cards-container">
+        <div class="card">
+          <img
+            class="card-image"
+            src="./uploads/clubs.webp"
+            alt="Upcoming Events"
+          />
+          <div class="card-title">Upcoming Events</div>
+          <div class="card-description">
+            Discover and join exciting events happening soon.
+          </div>
+          <button class="explore-button" onclick="redirectToEventsPage()">Explore</button>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-image"
+            src="./uploads/clubs.webp"
+            alt="Club Activities"
+          />
+          <div class="card-title">Club Activities</div>
+          <div class="card-description">
+            Explore clubs that match your interests and passions.
+          </div>
+          <button class="explore-button" onclick="redirectToClubsPage()">Explore</button>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function redirectToClubsPage() {
+        window.location.href = "homePage.php";
+      }
+      function redirectToEventsPage() {
+        window.location.href = "events.php";
+      }
+    </script>
+  </body>
+</html>
